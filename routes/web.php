@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuruController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SiswaController;
 
@@ -31,6 +32,7 @@ Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
 Route::middleware('auth')->group(function(){
     Route::resource('roles', RoleController::class);
     Route::resource('siswa', SiswaController::class);
+    Route::resource('guru', GuruController::class);
 
 });
 // Route::controller(RoleController::class)->group(function () {
