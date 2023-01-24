@@ -10,17 +10,17 @@
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../vendor/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="../vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/vendor/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
 
   <!-- CSS for this page only -->
-  <link rel="stylesheet" href="../vendor/chart.js/dist/Chart.min.css">
+  <link rel="stylesheet" href="/vendor/chart.js/dist/Chart.min.css">
   <!-- End CSS  -->
 
-  <link rel="stylesheet" href="../assets/css/style.min.css">
-  <link rel="stylesheet" href="../assets/css/bootstrap-override.min.css">
-  <link rel="stylesheet" id="theme-color" href="../assets/css/dark.min.css">
+  <link rel="stylesheet" href="/assets/css/style.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-override.min.css">
+  <link rel="stylesheet" id="theme-color" href="/assets/css/dark.min.css">
 </head>
 
 <body>
