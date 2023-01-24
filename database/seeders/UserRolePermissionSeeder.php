@@ -41,20 +41,23 @@ class UserRolePermissionSeeder extends Seeder
                 'name' => 'guru',
             ], $default_user_value));
 
-            $role = Role::create(['name' => 'admin']);
+            $role_admin = Role::create(['name' => 'admin']);
             $role = Role::create(['name' => 'guru']);
             $role_it = Role::create(['name' => 'it']);
 
-            $permission = Permission::create(['name' => 'read role']);
-            $permission = Permission::create(['name' => 'create role']);
-            $permission = Permission::create(['name' => 'update role']);
-            $permission = Permission::create(['name' => 'delete role']);
+            Permission::create(['name' => 'read role']);
+            Permission::create(['name' => 'create role']);
+            Permission::create(['name' => 'update role']);
+            Permission::create(['name' => 'delete role']);
+            Permission::create(['name' => 'read configuration']);
 
-
-            $role_it->givePermissionTo('read role');
-            $role_it->givePermissionTo('create role');
-            $role_it->givePermissionTo('update role');
-            $role_it->givePermissionTo('delete role');
+            $role_admin->givePermissionTo([
+                'read role',
+                'create role',
+                'update role',
+                'delete role',
+                'read configuration'
+            ]);
 
             $admin->assignRole('admin');
             $guru->assignRole('guru');
