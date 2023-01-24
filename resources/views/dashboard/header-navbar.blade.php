@@ -142,9 +142,9 @@
 
       <div class="dropdown dropdown-menu-end">
         <a href="#" class="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-          <div class="label">
+          <div class="label mx-3">
             <span></span>
-            <div>Admin</div>
+            <div>{{ Auth()->user()->name }}</div>
           </div>
 
           <img class="img-user" src="../assets/images/avatar1.png" alt="user"srcset="">
@@ -167,7 +167,7 @@
               </div>
             </a>
             
-            <a href="#">
+            <a href="/logout">
               <div class="description">
                 <i class="ti-power-off"></i> Logout
               </div>
